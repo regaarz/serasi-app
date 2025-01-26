@@ -453,68 +453,81 @@ def main():
 
 
     elif menu_selection == "About Us":
+        st.markdown("<h2 style='text-align: center;'>HYDRATS TEAM</h2>", unsafe_allow_html=True)
+        col1, col2, col3, col4 = st.columns([0.1, 0.1, 0.1,0.1])
+
+        # Menampilkan gambar di kolom dengan ukuran tertentu
+        with col1: 
+            img1 = Image.open('./Image/rega.png')
+            st.image(img1, caption="Rega Arzula Akbar", use_column_width=True, width=30)
+        with col2:
+            img2 = Image.open('./Image/rega.png')
+            st.image(img2, caption="Rega Arzula Akbar", use_column_width=True, width=30)
+        with col3:
+            img3 = Image.open('./Image/miftah.png')
+            st.image(img3, caption="Miftah Faqih", use_column_width=True, width=30)
+        with col4:
+            img4 = Image.open('./Image/brian.png')
+            st.image(img4, caption="Bryan Sasabone", use_column_width=True, width=30)
+
+    # CSS untuk mengatur styling div inovasi-box
         st.markdown("""
-<h2 style='text-align: center;'>HYDRATS TEAM</h2>
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
-    <div class="inovasi-box">
-        <div class="inovasi-title">Ekki Kurniawan</div>
-        <div class="inovasi-value">
-           <h1>Dosen Pembimbing</h1>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+        <div class="inovasi-box">
+            <div class="inovasi-title">Ekki Kurniawan</div>
+            <div class="inovasi-value">
+                Dosen Pembimbing
+            </div>
+        </div>
+        <div class="inovasi-box">
+            <div class="inovasi-title">Rega Arzula Akbar</div>
+            <div class="inovasi-value">
+                S1 Teknik Elektro 
+            </div>
+        </div>
+        <div class="inovasi-box">
+            <div class="inovasi-title">Miftah Faqih</div>
+            <div class="inovasi-value">
+                S1 Teknik Elektro 
+            </div>
+        </div>
+        <div class="inovasi-box">
+            <div class="inovasi-title">Bryan Sasabone</div>
+            <div class="inovasi-value">
+                S1 Teknik Elektro 
+            </div>
         </div>
     </div>
-    <div class="inovasi-box">
-        <div class="inovasi-title">Rega Arzula Akbar</div>
-        <div class="inovasi-value">
-            <h1>Anggota</h1>
-            S1 Teknik Elektro
-        </div>
-    </div>
-    <div class="inovasi-box">
-        <div class="inovasi-title">Miftah Faqih</div>
-        <div class="inovasi-value">
-           <h1>Anggota</h1>
-            S1 Teknik Elektro
-        </div>
-    </div>
-    <div class="inovasi-box">
-        <div class="inovasi-title">Bryan Sasabone</div>
-        <div class="inovasi-value">
-            <h1>Anggota</h1>
-            S1 Teknik Elektro
-        </div>
-    </div>
-</div>
 
-<style>
-.inovasi-box {
-    background-color: #f2f2f2; /* Warna abu-abu terang */
-    border-radius: 12px; /* Membuat sudut lebih membulat */
-    padding: 20px; /* Jarak dalam */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan lembut */
-    text-align: center; /* Pusatkan teks */
-    font-size: 14px; /* Ukuran font */
-    margin: 10px; /* Jarak antar elemen */
-    width: calc(100% - 40px); /* Default untuk layar kecil */
-    max-width: 300px; /* Batas maksimum lebar */
-}
-.inovasi-title {
-    font-size: 1.2em;
-    color: black; /* Warna hitam untuk judul */
-    font-weight: bold;
-}
-.inovasi-value {
-    font-size: 1em;
-    color: black; /* Warna hitam untuk teks */
-    font-weight: normal;
-}
-.inovasi-box:hover {
-    transform: scale(1.05); /* Sedikit memperbesar ukuran */
-    transition: transform 0.2s ease-in-out; /* Efek transisi halus */
-    background-color: #e0e0e0; /* Warna abu-abu sedikit lebih gelap saat hover */
-}
-</style>
-""", unsafe_allow_html=True)
-
+    <style>
+    .inovasi-box {
+        background-color: #f2f2f2; /* Warna abu-abu terang */
+        border-radius: 12px; /* Membuat sudut lebih membulat */
+        padding: 40px; /* Jarak dalam */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan lembut */
+        text-align: center; /* Pusatkan teks */
+        font-size: 14px; /* Ukuran font */
+        margin: 50px; /* Jarak antar elemen */
+        width: calc(100% - 40px); /* Default untuk layar kecil */
+        max-width: 300px; /* Batas maksimum lebar */
+    }
+    .inovasi-title {
+        font-size: 1.2em;
+        color: black; /* Warna hitam untuk judul */
+        font-weight: bold;
+    }
+    .inovasi-value {
+        font-size: 1em;
+        color: black; /* Warna hitam untuk teks */
+        font-weight: normal;
+    }
+    .inovasi-box:hover {
+        transform: scale(1.05); /* Sedikit memperbesar ukuran */
+        transition: transform 0.2s ease-in-out; /* Efek transisi halus */
+        background-color: #e0e0e0; /* Warna abu-abu sedikit lebih gelap saat hover */
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
     elif menu_selection == "FAQ":
         st.markdown("---", unsafe_allow_html=True)
