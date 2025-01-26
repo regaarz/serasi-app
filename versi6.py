@@ -196,9 +196,9 @@ def main():
 
         #Tulisan singkatan
         header_image2 = Image.open('Serasi4.png')  
-        col1, col2, col3 = st.columns([2.6, 2, 1])  
+        col1, col2, col3 = st.columns([2, 2, 1])  
         with col2:
-            st.image(header_image2, width=250)
+            st.image(header_image2, width=350)
 
         st.markdown("<hr/>", unsafe_allow_html=True)
 
