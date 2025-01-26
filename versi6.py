@@ -187,7 +187,7 @@ def main():
         header_image = Image.open('Serasi2.png')  
         col1, col2, col3 = st.columns([0.2, 0.4, 0.2])  
         with col2:
-            st.image(header_image, width=150)
+            st.image(header_image, width=250)
 
         #Tulisan SERASI
         col1, col2, col3 = st.columns([4.3, 5 ,6])
