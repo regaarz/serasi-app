@@ -192,7 +192,7 @@ def main():
         #Tulisan SERASI
         col1, col2, col3 = st.columns([4.3, 5 ,6])
         image2 = Image.open('Serasi5.png')
-        col2.image(image2,width=370)
+        col2.image(image2,width=400)
 
         #Tulisan singkatan
         header_image2 = Image.open('Serasi4.png')  
