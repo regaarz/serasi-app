@@ -462,10 +462,10 @@ def main():
             st.image(img1, caption="Rega Arzula Akbar", use_column_width=True, width=30)
             st.markdown("""
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
-            <div class="inovasi-box">
-                <div class="inovasi-title">Ekki Kurniawan</div>
+           <div class="inovasi-box">
+                <div class="inovasi-title">Rega Arzula Akbar</div>
                     <div class="inovasi-value">
-                    Dosen Pembimbing
+                    S1 Teknik Elektro 
                     </div>
                 </div>
             </div>
