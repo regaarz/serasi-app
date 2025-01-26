@@ -234,25 +234,26 @@ def main():
         )
 
         st.markdown("""
-        <div style='display: flex; justify-content: space-around; flex-wrap: wrap;'>
-            <div style='flex: 1 1 45%; max-width: 45%; margin: 10px; padding: 20px; border-radius: 10px; text-align: center; background-color: #f9f9f9; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);'>
-                <h3 style='color: black; text-align: center;'>Internet of Things</h3>
-                <p style='color: black;'>Memantau kondisi bendungan secara real-time, termasuk data suhu, pH, kualitas air, ketinggian air, kandungan air, tegangan, dan arus.</p>
-            </div>
-            <div style='flex: 1 1 45%; max-width: 45%; margin: 10px; padding: 20px; border-radius: 10px; text-align: center; background-color: #f9f9f9; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);'>
-                <h3 style='color: black; text-align: center;'>Pembangkit Listrik Tenaga Surya (PLTS)</h3>
-                <p style='color: black;'>Pembangkit listrik yang menggunakan energi cahaya matahari untuk menghasilkan listrik. PLTS merupakan salah satu teknologi energi terbarukan yang ramah lingkungan.</p>
-            </div>
-            <div style='flex: 1 1 45%; max-width: 45%; margin: 10px; padding: 20px; border-radius: 10px; text-align: center; background-color: #f9f9f9; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);'>
-                <h3 style='color: black; text-align: center;'>Pembangkit Listrik Tenaga MikroHidro (PLTMH)</h3>
-                <p style='color: black;'>PLTMH merupakan pembangkit listrik berskala kecil yang menggunakan aliran sungai atau irigasi sebagai sumber tenaga. PLTMH termasuk sumber energi terbarukan dan ramah lingkungan.</p>
-            </div>
-            <div style='flex: 1 1 45%; max-width: 45%; margin: 10px; padding: 20px; border-radius: 10px; text-align: center; background-color: #f9f9f9; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);'>
-                <h3 style='color: black; text-align: center;'>Website Interface</h3>
-                <p style='color: black;'>Memberikan pengguna kemampuan untuk memantau dan mengontrol kondisi air dari mana saja dan kapan saja.</p>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+<div style='display: flex; flex-wrap: wrap; justify-content: center;'>
+    <div style='flex: 1 1 calc(25% - 20px); max-width: calc(25% - 20px); margin: 10px; padding: 20px; border-radius: 10px; text-align: center; background-color: #f9f9f9; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);'>
+        <h3 style='color: black; text-align: center;'>Internet of Things</h3>
+        <p style='color: black;'>Memantau kondisi bendungan secara real-time, termasuk data suhu, pH, kualitas air, ketinggian air, kandungan air, tegangan, dan arus.</p>
+    </div>
+    <div style='flex: 1 1 calc(25% - 20px); max-width: calc(25% - 20px); margin: 10px; padding: 20px; border-radius: 10px; text-align: center; background-color: #f9f9f9; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);'>
+        <h3 style='color: black; text-align: center;'>Pembangkit Listrik Tenaga Surya (PLTS)</h3>
+        <p style='color: black;'>Pembangkit listrik yang menggunakan energi cahaya matahari untuk menghasilkan listrik. PLTS merupakan salah satu teknologi energi terbarukan yang ramah lingkungan.</p>
+    </div>
+    <div style='flex: 1 1 calc(25% - 20px); max-width: calc(25% - 20px); margin: 10px; padding: 20px; border-radius: 10px; text-align: center; background-color: #f9f9f9; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);'>
+        <h3 style='color: black; text-align: center;'>Pembangkit Listrik Tenaga MikroHidro (PLTMH)</h3>
+        <p style='color: black;'>PLTMH merupakan pembangkit listrik berskala kecil yang menggunakan aliran sungai atau irigasi sebagai sumber tenaga. PLTMH termasuk sumber energi terbarukan dan ramah lingkungan.</p>
+    </div>
+    <div style='flex: 1 1 calc(25% - 20px); max-width: calc(25% - 20px); margin: 10px; padding: 20px; border-radius: 10px; text-align: center; background-color: #f9f9f9; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);'>
+        <h3 style='color: black; text-align: center;'>Website Interface</h3>
+        <p style='color: black;'>Memberikan pengguna kemampuan untuk memantau dan mengontrol kondisi air dari mana saja dan kapan saja.</p>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
         st.markdown("<br>", unsafe_allow_html=True)
         st.markdown(
             """
