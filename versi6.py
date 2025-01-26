@@ -454,39 +454,141 @@ def main():
 
     elif menu_selection == "About Us":
         st.markdown("<h2 style='text-align: center;'>HYDRATS TEAM</h2>", unsafe_allow_html=True)
+        col1, col2, col3, col4 = st.columns([0.1, 0.1, 0.1,0.1])
 
-    # Menggunakan CSS Flexbox untuk menyelaraskan gambar dan deskripsi
-        st.markdown("""
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; align-items: center; margin-top: 20px;">
-        <!-- Gambar dan Deskripsi Rega -->
-        <div class="inovasi-box">
-            <img src="./Image/rega.png" style="width: 150px; height: auto; margin-bottom: 10px;" alt="Rega Arzula Akbar">
+        # Menampilkan gambar di kolom dengan ukuran tertentu
+        with col1: 
+            img1 = Image.open('./Image/rega.png')
+            st.image(img1, caption="Rega Arzula Akbar", use_column_width=True, width=30)
+            st.markdown("""
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+           <div class="inovasi-box">
+                <div class="inovasi-title">Rega Arzula Akbar</div>
+                    <div class="inovasi-value">
+                    S1 Teknik Elektro 
+                    </div>
+                </div>
+            </div>
+            <style>
+    .inovasi-box {
+        background-color: #f2f2f2; /* Warna abu-abu terang */
+        border-radius: 12px; /* Membuat sudut lebih membulat */
+        padding: 20px; /* Jarak dalam */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan lembut */
+        text-align: center; /* Pusatkan teks */
+        font-size: 14px; /* Ukuran font */
+        margin: 50px; /* Jarak antar elemen */
+        width: calc(100% - 40px); /* Default untuk layar kecil */
+        max-width: 300px; /* Batas maksimum lebar */
+    }
+    .inovasi-title {
+        font-size: 1.2em;
+        color: black; /* Warna hitam untuk judul */
+        font-weight: bold;
+    }
+    .inovasi-value {
+        font-size: 1em;
+        color: black; /* Warna hitam untuk teks */
+        font-weight: normal;
+    }
+    .inovasi-box:hover {
+        transform: scale(1.05); /* Sedikit memperbesar ukuran */
+        transition: transform 0.2s ease-in-out; /* Efek transisi halus */
+        background-color: #e0e0e0; /* Warna abu-abu sedikit lebih gelap saat hover */
+    }
+    </style>
+            """, unsafe_allow_html=True)
+        with col2:
+            img2 = Image.open('./Image/rega.png')
+            st.image(img2, caption="Rega Arzula Akbar", use_column_width=True, width=30)
+            st.markdown("""
+            <div class="inovasi-box">
             <div class="inovasi-title">Rega Arzula Akbar</div>
-            <div class="inovasi-value">S1 Teknik Elektro</div>
+            <div class="inovasi-value">
+                S1 Teknik Elektro 
+            </div>
         </div>
-
-        <!-- Gambar dan Deskripsi Miftah -->
-        <div class="inovasi-box">
-            <img src="./Image/miftah.png" style="width: 150px; height: auto; margin-bottom: 10px;" alt="Miftah Faqih">
+        </div>
+        <style>
+    .inovasi-box {
+        background-color: #f2f2f2; /* Warna abu-abu terang */
+        border-radius: 12px; /* Membuat sudut lebih membulat */
+        padding: 20px; /* Jarak dalam */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan lembut */
+        text-align: center; /* Pusatkan teks */
+        font-size: 14px; /* Ukuran font */
+        margin: 50px; /* Jarak antar elemen */
+        width: calc(100% - 40px); /* Default untuk layar kecil */
+        max-width: 300px; /* Batas maksimum lebar */
+    }
+    .inovasi-title {
+        font-size: 1.2em;
+        color: black; /* Warna hitam untuk judul */
+        font-weight: bold;
+    }
+    .inovasi-value {
+        font-size: 1em;
+        color: black; /* Warna hitam untuk teks */
+        font-weight: normal;
+    }
+    .inovasi-box:hover {
+        transform: scale(1.05); /* Sedikit memperbesar ukuran */
+        transition: transform 0.2s ease-in-out; /* Efek transisi halus */
+        background-color: #e0e0e0; /* Warna abu-abu sedikit lebih gelap saat hover */
+    }
+    </style>
+        """, unsafe_allow_html=True)
+        with col3:
+            img3 = Image.open('./Image/miftah.png')
+            st.image(img3, caption="Miftah Faqih", use_column_width=True, width=30)
+            st.markdown("""
+             <div class="inovasi-box">
             <div class="inovasi-title">Miftah Faqih</div>
-            <div class="inovasi-value">S1 Teknik Elektro</div>
-        </div>
-
-        <!-- Gambar dan Deskripsi Bryan -->
-        <div class="inovasi-box">
-            <img src="./Image/brian.png" style="width: 150px; height: auto; margin-bottom: 10px;" alt="Bryan Sasabone">
+            <div class="inovasi-value">
+                S1 Teknik Elektro 
+            </div>
+            </div>
+        </div> 
+        <style>
+    .inovasi-box {
+        background-color: #f2f2f2; /* Warna abu-abu terang */
+        border-radius: 12px; /* Membuat sudut lebih membulat */
+        padding: 20px; /* Jarak dalam */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan lembut */
+        text-align: center; /* Pusatkan teks */
+        font-size: 14px; /* Ukuran font */
+        margin: 50px; /* Jarak antar elemen */
+        width: calc(100% - 40px); /* Default untuk layar kecil */
+        max-width: 300px; /* Batas maksimum lebar */
+    }
+    .inovasi-title {
+        font-size: 1.2em;
+        color: black; /* Warna hitam untuk judul */
+        font-weight: bold;
+    }
+    .inovasi-value {
+        font-size: 1em;
+        color: black; /* Warna hitam untuk teks */
+        font-weight: normal;
+    }
+    .inovasi-box:hover {
+        transform: scale(1.05); /* Sedikit memperbesar ukuran */
+        transition: transform 0.2s ease-in-out; /* Efek transisi halus */
+        background-color: #e0e0e0; /* Warna abu-abu sedikit lebih gelap saat hover */
+    }
+    </style>
+        """, unsafe_allow_html=True)
+        with col4:
+            img4 = Image.open('./Image/brian.png')
+            st.image(img4, caption="Bryan Sasabone", use_column_width=True, width=30)
+            st.markdown("""
+             <div class="inovasi-box">
             <div class="inovasi-title">Bryan Sasabone</div>
-            <div class="inovasi-value">S1 Teknik Elektro</div>
-        </div>
-
-        <!-- Gambar dan Deskripsi Ekki -->
-        <div class="inovasi-box">
-            <img src="./Image/ekki.png" style="width: 150px; height: auto; margin-bottom: 10px;" alt="Ekki Kurniawan">
-            <div class="inovasi-title">Ekki Kurniawan</div>
-            <div class="inovasi-value">Dosen Pembimbing</div>
+            <div class="inovasi-value">
+                S1 Teknik Elektro 
+            </div>
         </div>
     </div>
-
     <style>
     .inovasi-box {
         background-color: #f2f2f2; /* Warna abu-abu terang */
@@ -495,14 +597,14 @@ def main():
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan lembut */
         text-align: center; /* Pusatkan teks */
         font-size: 14px; /* Ukuran font */
-        margin: 10px; /* Jarak antar elemen */
-        max-width: 200px; /* Batas maksimum lebar */
+        margin: 50px; /* Jarak antar elemen */
+        width: calc(100% - 40px); /* Default untuk layar kecil */
+        max-width: 300px; /* Batas maksimum lebar */
     }
     .inovasi-title {
         font-size: 1.2em;
         color: black; /* Warna hitam untuk judul */
         font-weight: bold;
-        margin-top: 10px;
     }
     .inovasi-value {
         font-size: 1em;
@@ -516,7 +618,6 @@ def main():
     }
     </style>
     """, unsafe_allow_html=True)
-
 
     elif menu_selection == "FAQ":
         st.markdown("---", unsafe_allow_html=True)
