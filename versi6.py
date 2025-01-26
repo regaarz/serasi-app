@@ -457,21 +457,30 @@ def main():
 <h2 style='text-align: center;'>HYDRATS TEAM</h2>
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
     <div class="inovasi-box">
+        <div class="inovasi-title">Ekki Kurniawan</div>
+        <div class="inovasi-value">
+           <h1>Dosen Pembimbing</h1>
+        </div>
+    </div>
+    <div class="inovasi-box">
         <div class="inovasi-title">Rega Arzula Akbar</div>
         <div class="inovasi-value">
-            Monitoring plant conditions (temperature, humidity, air quality, and water pH) in real-time with sensors integrated into our website.
+            <h1>Anggota</h1>
+            S1 Teknik Elektro
         </div>
     </div>
     <div class="inovasi-box">
         <div class="inovasi-title">Miftah Faqih</div>
         <div class="inovasi-value">
-            Detecting plant types and classifying plant age through image analysis. This advanced detection helps in monitoring the growth stages and health of your plants, ensuring optimal care and timely intervention.
+           <h1>Anggota</h1>
+            S1 Teknik Elektro
         </div>
     </div>
     <div class="inovasi-box">
         <div class="inovasi-title">Bryan Sasabone</div>
         <div class="inovasi-value">
-            Allow users to manage and adjust their hydroponic environment conditions in real-time. Users can control fans and heating lamps based on temperature sensor readings to maintain ideal climate conditions, and also manage water flow as needed.
+            <h1>Anggota</h1>
+            S1 Teknik Elektro
         </div>
     </div>
 </div>
