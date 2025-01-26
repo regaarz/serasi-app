@@ -234,25 +234,63 @@ def main():
         )
 
         st.markdown("""
-<div style='display: flex; flex-wrap: wrap; justify-content: center;'>
-    <div style='flex: 1 1 calc(25% - 20px); max-width: calc(25% - 20px); margin: 10px; padding: 20px; border-radius: 10px; text-align: center; background-color: #f9f9f9; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);'>
-        <h3 style='color: black; text-align: center;'>Internet of Things</h3>
-        <p style='color: black;'>Memantau kondisi bendungan secara real-time, termasuk data suhu, pH, kualitas air, ketinggian air, kandungan air, tegangan, dan arus.</p>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+    <div class="inovasi-box">
+        <div class="inovasi-title">Internet of Things</div>
+        <div class="inovasi-value">
+            Memantau kondisi bendungan secara real-time, termasuk data suhu, pH, kualitas air, ketinggian air, kandungan air, tegangan, dan arus.
+        </div>
     </div>
-    <div style='flex: 1 1 calc(25% - 20px); max-width: calc(25% - 20px); margin: 10px; padding: 20px; border-radius: 10px; text-align: center; background-color: #f9f9f9; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);'>
-        <h3 style='color: black; text-align: center;'>Pembangkit Listrik Tenaga Surya (PLTS)</h3>
-        <p style='color: black;'>Pembangkit listrik yang menggunakan energi cahaya matahari untuk menghasilkan listrik. PLTS merupakan salah satu teknologi energi terbarukan yang ramah lingkungan.</p>
+    <div class="inovasi-box">
+        <div class="inovasi-title">Pembangkit Listrik Tenaga Surya (PLTS)</div>
+        <div class="inovasi-value">
+            Menggunakan energi cahaya matahari untuk menghasilkan listrik. PLTS merupakan salah satu teknologi energi terbarukan yang ramah lingkungan.
+        </div>
     </div>
-    <div style='flex: 1 1 calc(25% - 20px); max-width: calc(25% - 20px); margin: 10px; padding: 20px; border-radius: 10px; text-align: center; background-color: #f9f9f9; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);'>
-        <h3 style='color: black; text-align: center;'>Pembangkit Listrik Tenaga MikroHidro (PLTMH)</h3>
-        <p style='color: black;'>PLTMH merupakan pembangkit listrik berskala kecil yang menggunakan aliran sungai atau irigasi sebagai sumber tenaga. PLTMH termasuk sumber energi terbarukan dan ramah lingkungan.</p>
+    <div class="inovasi-box">
+        <div class="inovasi-title">Pembangkit Listrik Tenaga MikroHidro (PLTMH)</div>
+        <div class="inovasi-value">
+            Menggunakan aliran sungai atau irigasi sebagai sumber tenaga. PLTMH termasuk sumber energi terbarukan dan ramah lingkungan.
+        </div>
     </div>
-    <div style='flex: 1 1 calc(25% - 20px); max-width: calc(25% - 20px); margin: 10px; padding: 20px; border-radius: 10px; text-align: center; background-color: #f9f9f9; box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);'>
-        <h3 style='color: black; text-align: center;'>Website Interface</h3>
-        <p style='color: black;'>Memberikan pengguna kemampuan untuk memantau dan mengontrol kondisi air dari mana saja dan kapan saja.</p>
+    <div class="inovasi-box">
+        <div class="inovasi-title">Website Interface</div>
+        <div class="inovasi-value">
+            Memberikan pengguna kemampuan untuk memantau dan mengontrol kondisi air dari mana saja dan kapan saja.
+        </div>
     </div>
 </div>
+
+<style>
+.inovasi-box {
+    background-color: #f2f2f2; /* Warna abu-abu terang */
+    border-radius: 12px; /* Membuat sudut lebih membulat */
+    padding: 20px; /* Jarak dalam */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan lembut */
+    text-align: center; /* Pusatkan teks */
+    font-size: 14px; /* Ukuran font */
+    margin: 10px; /* Jarak antar elemen */
+    width: calc(100% - 40px); /* Default untuk layar kecil */
+    max-width: 300px; /* Batas maksimum lebar */
+}
+.inovasi-title {
+    font-size: 1.2em;
+    color: black; /* Warna hitam untuk judul */
+    font-weight: bold;
+}
+.inovasi-value {
+    font-size: 1em;
+    color: black; /* Warna hitam untuk teks */
+    font-weight: normal;
+}
+.inovasi-box:hover {
+    transform: scale(1.05); /* Sedikit memperbesar ukuran */
+    transition: transform 0.2s ease-in-out; /* Efek transisi halus */
+    background-color: #e0e0e0; /* Warna abu-abu sedikit lebih gelap saat hover */
+}
+</style>
 """, unsafe_allow_html=True)
+
 
         st.markdown("<br>", unsafe_allow_html=True)
         st.markdown(
