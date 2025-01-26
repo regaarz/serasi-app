@@ -185,7 +185,7 @@ def main():
         st.markdown("<hr/>", unsafe_allow_html=True)
         #Logo
         header_image = Image.open('Serasi2.png')  
-        col1, col2, col3 = st.columns([8,4, 1])  
+        col1, col2, col3 = st.columns([8,4, 4])  
         with col2:
             st.image(header_image, width=150)
 
