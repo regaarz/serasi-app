@@ -513,7 +513,7 @@ def main():
     .inovasi-box {
         background-color: #f2f2f2; /* Warna abu-abu terang */
         border-radius: 12px; /* Membuat sudut lebih membulat */
-        padding: 30px; /* Jarak dalam */
+        padding: 20px; /* Jarak dalam */
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan lembut */
         text-align: center; /* Pusatkan teks */
         font-size: 14px; /* Ukuran font */
@@ -553,7 +553,7 @@ def main():
     .inovasi-box {
         background-color: #f2f2f2; /* Warna abu-abu terang */
         border-radius: 12px; /* Membuat sudut lebih membulat */
-        padding: 30px; /* Jarak dalam */
+        padding: 20px; /* Jarak dalam */
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan lembut */
         text-align: center; /* Pusatkan teks */
         font-size: 14px; /* Ukuran font */
@@ -593,7 +593,7 @@ def main():
     .inovasi-box {
         background-color: #f2f2f2; /* Warna abu-abu terang */
         border-radius: 12px; /* Membuat sudut lebih membulat */
-        padding: 30px; /* Jarak dalam */
+        padding: 20px; /* Jarak dalam */
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan lembut */
         text-align: center; /* Pusatkan teks */
         font-size: 14px; /* Ukuran font */
