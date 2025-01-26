@@ -187,12 +187,12 @@ def main():
         header_image = Image.open('Serasi2.png')  
         col1, col2, col3 = st.columns([0.2, 0.4, 0.2])  
         with col2:
-            st.image(header_image, width=230)
+            st.image(header_image, width=280)
 
         #Tulisan SERASI
         col1, col2, col3 = st.columns([4.3, 5 ,6])
         image2 = Image.open('Serasi5.png')
-        col2.image(image2,width=420)
+        col2.image(image2,width=390)
 
         #Tulisan singkatan
         header_image2 = Image.open('Serasi4.png')  
