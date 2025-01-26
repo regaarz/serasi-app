@@ -416,7 +416,17 @@ def main():
 
     # Monitoring section - Optimized
     elif menu_selection == "Monitoring":
-        st.markdown("<h1 style='text-align: center;'>Monitoring</h1>", unsafe_allow_html=True)
+        st.markdown("""
+        <h1 style='text-align: center; margin: 0 auto; padding: 10px;'>Monitoring</h1>
+        <style>
+            h1 {
+                text-align: center;
+                margin: 0 auto; /* Pusatkan elemen */
+                padding: 10px; /* Jarak internal untuk kenyamanan visual */
+                font-size: 24px; /* Ukuran font menyesuaikan layar kecil */
+            }
+        </style>
+        """, unsafe_allow_html=True)
         col1, col2, col3, col4, col5 = st.columns(5)
         col6, col7, col8, col9, col10 = st.columns(5)
         
