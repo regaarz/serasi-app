@@ -187,18 +187,18 @@ def main():
         header_image = Image.open('Serasi2.png')  
         col1, col2, col3 = st.columns([7.2,8.5, 1])  
         with col2:
-            st.image(header_image, width=200)
+            st.image(header_image, width=150)
 
         #Tulisan SERASI
         col1, col2, col3 = st.columns([4.3, 5 ,6])
         image2 = Image.open('Serasi5.png')
-        col2.image(image2,width=700)
+        col2.image(image2,width=400)
 
         #Tulisan singkatan
         header_image2 = Image.open('Serasi4.png')  
         col1, col2, col3 = st.columns([2.6, 3.4, 1])  
         with col2:
-            st.image(header_image2, width=400)
+            st.image(header_image2, width=200)
 
         st.markdown("<hr/>", unsafe_allow_html=True)
 
