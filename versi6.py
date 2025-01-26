@@ -453,10 +453,10 @@ def main():
 
 
     elif menu_selection == "About Us":
-    st.markdown("<h2 style='text-align: center;'>HYDRATS TEAM</h2>", unsafe_allow_html=True)
+        st.markdown("<h2 style='text-align: center;'>HYDRATS TEAM</h2>", unsafe_allow_html=True)
 
     # Menggunakan CSS Flexbox untuk menyelaraskan gambar dan deskripsi
-    st.markdown("""
+        st.markdown("""
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; align-items: center; margin-top: 20px;">
         <!-- Gambar dan Deskripsi Rega -->
         <div class="inovasi-box">
