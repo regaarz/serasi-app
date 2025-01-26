@@ -473,6 +473,7 @@ def main():
         with col2:
             img2 = Image.open('./Image/rega.png')
             st.image(img2, caption="Rega Arzula Akbar", use_column_width=True, width=30)
+            st.markdown("""
             <div class="inovasi-box">
             <div class="inovasi-title">Rega Arzula Akbar</div>
             <div class="inovasi-value">
@@ -484,6 +485,7 @@ def main():
         with col3:
             img3 = Image.open('./Image/miftah.png')
             st.image(img3, caption="Miftah Faqih", use_column_width=True, width=30)
+            st.markdown("""
              <div class="inovasi-box">
             <div class="inovasi-title">Miftah Faqih</div>
             <div class="inovasi-value">
@@ -495,6 +497,7 @@ def main():
         with col4:
             img4 = Image.open('./Image/brian.png')
             st.image(img4, caption="Bryan Sasabone", use_column_width=True, width=30)
+            st.markdown("""
              <div class="inovasi-box">
             <div class="inovasi-title">Bryan Sasabone</div>
             <div class="inovasi-value">
