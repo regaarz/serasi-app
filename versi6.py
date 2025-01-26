@@ -443,26 +443,59 @@ def main():
 
 
     elif menu_selection == "About Us":
-        st.markdown(
-            """
-            <h2 style='text-align: center;'>HYDRATS TEAM</h2>
-            <div style='display: flex; justify-content: space-around; flex-wrap: wrap;'>
-                <div style='flex: 1; margin: 10px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; text-align: center; background-color: #f9f9f9;'>
-                    <h3 style='color: black; text-align: center;'>Rega Arzula Akbar</h3>
-                    <p style='color: black;'>Monitoring plant conditions (temperature, humidity, air quality, and water pH) in real-time with sensors integrated into our website.</p>
-                </div>
-                <div style='flex: 1; margin: 10px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; text-align: center; background-color: #f9f9f9;'>
-                    <h3 style='color: black; text-align: center;'>Miftah Faqih</h3>
-                    <p style='color: black;'>Detecting plant types and classifying plant age through image analysis. This advanced detection helps in monitoring the growth stages and health of your plants, ensuring optimal care and timely intervention.</p>
-                </div>
-                <div style='flex: 1; margin: 10px; padding: 20px; border: 1px solid #ccc; border-radius: 10px; text-align: center; background-color: #f9f9f9;'>
-                    <h3 style='color: black; text-align: center;'>Bryan Sasabone</h3>
-                    <p style='color: black;'>Allow users to manage and adjust their hydroponic environment conditions in real-time. Users can control fans and heating lamps based on temperature sensor readings to maintain ideal climate conditions, and also manage water flow as needed.</p>
-                </div>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+        st.markdown("""
+<h2 style='text-align: center;'>HYDRATS TEAM</h2>
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+    <div class="inovasi-box">
+        <div class="inovasi-title">Rega Arzula Akbar</div>
+        <div class="inovasi-value">
+            Monitoring plant conditions (temperature, humidity, air quality, and water pH) in real-time with sensors integrated into our website.
+        </div>
+    </div>
+    <div class="inovasi-box">
+        <div class="inovasi-title">Miftah Faqih</div>
+        <div class="inovasi-value">
+            Detecting plant types and classifying plant age through image analysis. This advanced detection helps in monitoring the growth stages and health of your plants, ensuring optimal care and timely intervention.
+        </div>
+    </div>
+    <div class="inovasi-box">
+        <div class="inovasi-title">Bryan Sasabone</div>
+        <div class="inovasi-value">
+            Allow users to manage and adjust their hydroponic environment conditions in real-time. Users can control fans and heating lamps based on temperature sensor readings to maintain ideal climate conditions, and also manage water flow as needed.
+        </div>
+    </div>
+</div>
+
+<style>
+.inovasi-box {
+    background-color: #f2f2f2; /* Warna abu-abu terang */
+    border-radius: 12px; /* Membuat sudut lebih membulat */
+    padding: 20px; /* Jarak dalam */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan lembut */
+    text-align: center; /* Pusatkan teks */
+    font-size: 14px; /* Ukuran font */
+    margin: 10px; /* Jarak antar elemen */
+    width: calc(100% - 40px); /* Default untuk layar kecil */
+    max-width: 300px; /* Batas maksimum lebar */
+}
+.inovasi-title {
+    font-size: 1.2em;
+    color: black; /* Warna hitam untuk judul */
+    font-weight: bold;
+}
+.inovasi-value {
+    font-size: 1em;
+    color: black; /* Warna hitam untuk teks */
+    font-weight: normal;
+}
+.inovasi-box:hover {
+    transform: scale(1.05); /* Sedikit memperbesar ukuran */
+    transition: transform 0.2s ease-in-out; /* Efek transisi halus */
+    background-color: #e0e0e0; /* Warna abu-abu sedikit lebih gelap saat hover */
+}
+</style>
+""", unsafe_allow_html=True)
+
 
     elif menu_selection == "FAQ":
         st.markdown("---", unsafe_allow_html=True)
@@ -502,14 +535,6 @@ def main():
             - Menjaga keseimbangan ekosistem sekitar bendungan.
             """)
             
-        with st.expander("Bagaimana SERASI mendukung SDGs?"):
-            st.write("""
-            Proyek SERASI mendukung SDGs sebagai berikut:
-            - SDGs 6: Meningkatkan akses air bersih dan sanitasi.
-            - SDGs 7: Menggunakan energi terbarukan untuk mendukung pengelolaan sistem.
-            - SDGs 15: Melindungi dan memulihkan ekosistem daratan di sekitar bendungan.
-            """)
-
         with st.expander("Bagaimana SERASI mendukung SDGs?"):
             st.write("""
             Proyek SERASI mendukung SDGs sebagai berikut:
